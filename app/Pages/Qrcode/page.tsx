@@ -12,7 +12,6 @@ export default function QRCodeGenerator() {
   const [error, setError] = useState<string>("");
   const [qrColor, setQrColor] = useState<string>("#000000");
   const [bgColor, setBgColor] = useState<string>("#ffffff");
-  const [qrSize, setQrSize] = useState<number>(250);
   const [platform, setPlatform] = useState<string>("");
   const qrRef = useRef<HTMLDivElement>(null);
 
@@ -33,7 +32,7 @@ export default function QRCodeGenerator() {
       return socialMediaPlatforms.some((platform) =>
         parsedUrl.hostname.includes(platform)
       );
-    } catch (_) {
+    } catch {
       return false;
     }
   };
@@ -117,7 +116,7 @@ export default function QRCodeGenerator() {
         {qrData && (
           <div className="mt-8 flex flex-col items-center" ref={qrRef}>
             <div className=" p-6 rounded-lg shadow-lg border border-gray-600 flex justify-center items-center w-fit">
-              <QRCode value={qrData} size={qrSize} fgColor={qrColor} bgColor={bgColor} />
+              <QRCode value={qrData} size={250} fgColor={qrColor} bgColor={bgColor} />
             </div>
             <p className="mt-2 text-black">Platform: {platform}</p>
 

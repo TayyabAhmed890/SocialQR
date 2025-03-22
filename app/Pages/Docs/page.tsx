@@ -2,9 +2,7 @@
 import { Poppins } from "next/font/google";
 import { useState } from "react";
 
-
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
-
 
 const sections = [
   {
@@ -16,7 +14,7 @@ const sections = [
         details: (
           <ul className={`${poppins.className} list-disc pl-5 space-y-2 text-sm md:text-base lg:text-lg`}>
             <li>Enter your social media link.</li>
-            <li>Click <strong>"Generate QR Code"</strong>.</li>
+            <li>Click <strong>&quot;Generate QR Code&quot;</strong>.</li>
             <li>Download and share your QR code.</li>
           </ul>
         ),
