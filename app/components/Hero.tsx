@@ -14,8 +14,7 @@ export default function HeroSection() {
           src="/ssmedia.jpg" // Ensure this image is in the public folder
           alt="Social Media Background"
           layout="fill"
-          objectFit="cover"
-          className="opacity-30 blur-[5px]"
+          className="opacity-50 blur-[3px] object-cover"
         />
       </div>
 

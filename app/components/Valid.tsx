@@ -6,7 +6,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
 export default function SocialPlatforms() {
   return (
     <div className={`${poppins.className} flex flex-col items-center justify-center py-12 px-6 `}>
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 leading-[1.2]"><span className="text-blue-600">Supported</span> Social <br/> Media <span className="bg-blue-600 px-2 text-white">Links</span></h2>
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 leading-[1.2]"><span className="text-blue-600 px-2">Supported</span> Social <br/> Media <span className="bg-blue-600 px-2 text-white">Links</span></h2>
       <p className="text-center text-gray-600 max-w-lg">
         Generate stylish QR codes for these platforms and share your social media presence with ease.
       </p>
@@ -33,7 +33,7 @@ export default function SocialPlatforms() {
         </div>
 
         <div className="flex flex-col items-center p-6 border rounded-xl hover:scale-110 hover:bg-gray-100 transition-all duration-300 ease-in-out w-32 md:w-40">
-          <FaYoutube className="text-black text-5xl transition-transform duration-300 hover:rotate-12" />
+          <FaYoutube className="text-black active:text-white text-5xl transition-transform duration-300 hover:rotate-12 " />
           <span className="mt-3 font-semibold">YouTube</span>
         </div>
       </div>

@@ -62,7 +62,7 @@ export default function ModernInfo() {
       <div className="mt-10">
         <button
           onClick={() => router.push("Pages/Qrcode")} // Navigate to QR code page
-          className="border border-black bg-white text-black font-semibold px-8 py-3 rounded-lg hover:bg-black hover:text-white transition-all"
+          className="border border-black bg-white text-black font-semibold px-8 py-3 rounded-lg hover:bg-black hover:text-white transition-all active:bg-black active:text-white"
         >
           Generate Now →
         </button>

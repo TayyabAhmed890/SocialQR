@@ -108,7 +108,7 @@ export default function QRCodeGenerator() {
         {error && <p className="text-red-400 text-sm mt-2">{error}</p>}
         <button
           onClick={generateQRCode}
-          className="w-full bg-transparent border border-black text-black hover:bg-black hover:text-white py-3 rounded mt-5 transition font-semibold"
+          className="w-full bg-transparent border border-black text-black hover:bg-black hover:text-white py-3 rounded mt-5 transition font-semibold active:bg-black active:text-white"
         >
           Generate QR Code
         </button>
@@ -132,7 +132,7 @@ export default function QRCodeGenerator() {
             
             <button
               onClick={downloadQRCode}
-              className="bg-white text-black border hover:bg-black hover:text-white py-3 px-6 rounded mt-6 transition font-semibold"
+              className="bg-white text-black border hover:bg-black hover:text-white py-3 px-6 rounded mt-6 transition font-semibold active:bg-black active:text-white"
             >
               Download QR Code
             </button>
